@@ -41,7 +41,7 @@ OR
 2. Launch Jupiter by running 'jupyter notebook'. A browser window will open.
 
 ### MongoDB Setup Instructions
-1. Download either the community version or set up a MongoDB Atlas.
+1. Set up a MongoDB Atlas account at https://www.mongodb.com/try.
 2. Follow the setup prompt and retrieve a connection string.
 3. Create a .env file in the project folder and assign the string to the 'uri' variable (uri=connectionstring). 
 
@@ -60,3 +60,4 @@ OR
 - average_expenses_by_gender.png: visualization of gender distribution across spending categories.
 - average_income_by_age_group_.png: visualization of ages with the highest income
 - README.md
+
