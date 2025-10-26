@@ -1,7 +1,7 @@
 # Flask Healthcare Application
 
 ## Project Overview
-This project is a full-stack web application built using Python, Flask, and MongoDB Atlas to collect and analyze healthcare-related survey data for a new product development. It includes form handling, database integration, data processing, data visualizatio,n and cloud deployment.
+This project is a full-stack web application built using Python, Flask, and MongoDB Atlas to collect and analyze healthcare-related survey data for a new product development. It includes form handling, database integration, data processing, data visualization and cloud deployment.
 
 
 ## Features
@@ -11,7 +11,7 @@ This project is a full-stack web application built using Python, Flask, and Mong
 - Reading and loading data from cloud storage to csv_files.
 - Data visualization using Seaborn and Matplotlib.
 - Flask App hosted on AWS EC2, publicly accessible via this link: http://35.179.152.112:5000/
-N.B.: The data present in the database was generated using Faker for illustration. It is not real data.
+N.B.: The data present in the current user_data.csv was generated using Faker for illustration. It is not real data.
 
 ## Technologies Used
 - **Flask** (Python web framework)
@@ -60,4 +60,5 @@ OR
 - average_expenses_by_gender.png: visualization of gender distribution across spending categories.
 - average_income_by_age_group_.png: visualization of ages with the highest income
 - README.md
+
 
