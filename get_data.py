@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, redirect
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)  # Initialize Flask app
 #connect to MongoDBAtlas
-uri = "mongodb+srv://simi:MPFETG4lCfdNaXiK@flaskappdb.iz1nlcx.mongodb.net/?appName=FlaskAppDb"
+uri = os.getenv("uri")
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))

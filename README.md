@@ -20,9 +20,10 @@ N.B: The data present in the database was generatedusing Faker for the purpose o
 - **AWS EC2** (for deployment)
 
 ## System Requirements
--  Visual Studio Code with Pylance extension (recommended)
+- Visual Studio Code with Pylance extension (recommended)
 - Jupiter Notebook (recommended)
 - Python 3.11 or 3.13 (recommended)
+- Mongo DB
 
 ## Setup Instructions
 ### Python Setup Instructions
@@ -38,6 +39,11 @@ N.B: The data present in the database was generatedusing Faker for the purpose o
 OR 
 1. Download and install Jupyter Notebook (if not already installed) by running 'pip install notebook' in your terminal 
 2. Launch Jupiter by running 'jupyter notebook'. A browser window will open.
+
+### Mongo DB Setup Instructions
+1. Download either the community version or the set up a Mongo Db Atlas
+2. Follow the setup prompt and retrieve a connection string.
+3. Create a dotenv file in the projrct folder and assign the string to the 'uri' variable (uri=connectionstring). 
 
 ## Running the Files
 1. In your prefered IDE, open the folder containing all files.

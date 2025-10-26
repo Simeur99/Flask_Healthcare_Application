@@ -1,6 +1,8 @@
 import csv
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import os
+from dotenv import load_dotenv
 
 # Define the User class
 class User:
@@ -15,7 +17,7 @@ class User:
         self.total_expenses = doc.get("totalExpenses", sum(self.expenses.values()))
 
 #  Connect to MongoDB
-uri = "mongodb+srv://simi:MPFETG4lCfdNaXiK@flaskappdb.iz1nlcx.mongodb.net/?appName=FlaskAppDb"
+uri = os.getenv("uri")
 client = MongoClient(uri, server_api=ServerApi('1'))
 
 # Send a ping to confirm a successful connection
