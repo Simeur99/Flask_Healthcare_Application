@@ -1,7 +1,7 @@
 # Flask Healthcare Application
 
 ## Project Overview
-This project is a full-stack web application built using Python, Flask, and MongoDB Atlas to collect and analyze healthcare-related survey data for a new product development. It includes form handling, database integration, data processing, data visualization and cloud deployment.
+This project is a full-stack web application built using Python, Flask, and MongoDB Atlas to collect and analyze healthcare-related survey data for a new product development. It includes form handling, database integration, data processing, data visualization, and cloud deployment.
 
 
 ## Features
@@ -11,7 +11,7 @@ This project is a full-stack web application built using Python, Flask, and Mong
 - Reading and loading data from cloud storage to csv_files.
 - Data visualization using Seaborn and Matplotlib.
 - Flask App hosted on AWS EC2, publicly accessible via this link: http://35.179.152.112:5000/
-N.B.: The data present in the current user_data.csv was generated using Faker for illustration. It is not real data.
+N.B.The data present in the current user_data.csv was generated using Faker for illustration. It is not real data.
 
 ## Technologies Used
 - **Flask** (Python web framework)
@@ -35,7 +35,7 @@ N.B.: The data present in the current user_data.csv was generated using Faker fo
 3. In the terminal, use 'pip install' to install requirements 'Pymongo', 'Flask', 'Pandas', 'Matplotlib', 'Seaborn' packages if not previously installed.
 
 ### Jupiter Notebook Setup Instructions
-1. Install the Jupiter notebook extension in Visual Studio code.
+1. Install the Jupiter notebook extension in Visual Studio Code.
 OR 
 1. Download and install Jupyter Notebook (if not already installed) by running 'pip install notebook' in your terminal 
 2. Launch Jupiter by running 'jupyter notebook'. A browser window will open.
@@ -43,13 +43,13 @@ OR
 ### MongoDB Setup Instructions
 1. Set up a MongoDB Atlas account at https://www.mongodb.com/try.
 2. Follow the setup prompt and retrieve a connection string.
-3. Create a .env file in the project folder and assign the string to the 'uri' variable (uri=connectionstring). 
+3. Rename the env file to .env and assign the string to the 'uri' variable (uri=connectionstring).  
 
 ## Running the Files
 1. In your preferred IDE, open the folder containing all files.
 2. Select the get_data.py file and run. A browser tab would open to a survey form. Fill the form and submit (DO NOT USE SENSITIVE DATA).
 3. Next, run the load_data.py file to retrieve data from the database. The data would be stored in user_data.csv.
-4. Next, open the data_viz.ipynb file and 'Run All'. 2 visuals would be exported as PNG for ages with the highest income and gender distribution across spending categories, would can be used for PowerPoint presentation.
+4. Next, open the data_viz.ipynb file and 'Run All'. Two(2) visuals would be exported as PNG for ages with the highest income and gender distribution across spending categories, would can be used for a PowerPoint presentation.
 
 ## Files Included
 - get_data.py: Flask app that generates a survey form.
@@ -60,5 +60,7 @@ OR
 - average_expenses_by_gender.png: visualization of gender distribution across spending categories.
 - average_income_by_age_group_.png: visualization of ages with the highest income
 - README.md
+- env: stores database connection parameters. 
+
 
 
